@@ -62,11 +62,11 @@ export const asyncRouterMap = [
                 ],
             },
             {
-                path: '/about',
+                path: '/sub-vue/about',
                 name: 'About',
-                component: () => import('@/views/About.vue'),
+                component: () => import('@/views/Qiankun.vue'),
                 meta: {
-                    title: '关于',
+                    title: '子应用',
                     keepAlive: true,
                 },
             },

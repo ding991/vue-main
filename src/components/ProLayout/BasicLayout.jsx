@@ -84,6 +84,7 @@ const BasicLayout = {
             handleCollapse,
             siderWidth,
             fixSiderbar,
+            hideMenus,
             i18nRender = defaultI18nRender,
         } = props
 
@@ -126,11 +127,11 @@ const BasicLayout = {
                             ...mediaQuery,
                         }}
                     >
-                        <SiderMenuWrapper
+                        {!hideMenus && <SiderMenuWrapper
                             {...{ props: cdProps }}
                             collapsed={collapsed}
                             onCollapse={handleCollapse}
-                        />
+                        />}
                         <Layout
                             class={[layout]}
                             style={{
@@ -140,7 +141,7 @@ const BasicLayout = {
                                 minHeight: '100vh',
                             }}
                         >
-                            {headerRender(h, {
+                            {!hideMenus && headerRender(h, {
                                 ...cdProps,
                                 mode: 'horizontal',
                             })}
