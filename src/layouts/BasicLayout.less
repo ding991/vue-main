@@ -1,0 +1,156 @@
+@import '~ant-design-vue/es/style/themes/default.less';
+
+
+.ant-pro-global-header-index-right {
+    margin-right: 8px;
+
+    &.ant-pro-global-header-index-dark {
+        .ant-pro-global-header-index-action {
+            color: hsla(0, 0%, 100%, 0.85);
+
+            &:hover {
+                background: #1890ff;
+            }
+        }
+    }
+
+    .ant-pro-account-avatar {
+        .antd-pro-global-header-index-avatar {
+            margin: ~'calc((@{layout-header-height} - 24px) / 2)' 0;
+            margin-right: 8px;
+            color: @primary-color;
+            vertical-align: top;
+            background: rgba(255, 255, 255, 0.85);
+        }
+    }
+
+    .menu {
+        .anticon {
+            margin-right: 8px;
+        }
+
+        .ant-dropdown-menu-item {
+            min-width: 100px;
+        }
+    }
+}
+
+// 隐藏默认的折叠按钮
+.ant-pro-global-header-trigger {
+    display: none!important;
+}
+
+// 顶部栏
+.ant-layout-header {
+    background: none!important;
+
+    .ant-pro-top-nav-header {
+        background-color: rgba(43,109,255,0.88)!important;
+        box-shadow: 0px 4px 8px 0px rgba(43,109,255,0.3)!important;
+
+        .ant-pro-top-nav-header-menu {
+
+            .ant-menu {
+                background: none!important;
+
+                .ant-menu-submenu {
+                    color: #fff;
+                    font-size: 14px;
+                    top: 0;
+                    border-bottom: 0;
+                    margin-right: 10px;
+                }
+
+                .ant-menu-item {
+                    margin-right: 10px;
+                    top: 0;
+                    border-bottom: 0;
+
+                    a {
+                        color: #fff;
+                        font-size: 14px;
+                    }
+
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+
+                .ant-menu-item-selected,
+                .ant-menu-item-active,
+                .ant-menu-submenu-open,
+                .ant-menu-submenu-active,
+                .ant-menu-submenu-selected {
+                    color: #fff;
+                    background: rgba(255, 255, 255, .16);
+                    border-bottom: 0;
+
+                    a, .ant-menu-submenu-title {
+                        font-size: 14px;
+                        color: #fff;
+                        font-weight: bold;
+                    }
+
+                    .ant-menu-submenu-title {
+
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ant-menu-submenu-popup {
+    z-index: 1051!important;
+}
+
+.ant-layout-sider-collapsed {
+
+    #root-scrollbar {
+        overflow: hidden!important;
+
+        .ps__rail-y {
+            display: none;
+        }
+    }
+}
+
+.ant-pro-top-nav-header-main {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+.ant-pro-top-nav-header-logo {
+    width: auto !important;
+
+    .logo {
+
+        img {
+            height: 24px;
+            width: auto;
+        }
+    }
+}
+
+.ant-menu-submenu-popup {
+    .ant-menu-item {
+        font-size: 14px;
+    }
+
+    .ant-menu-item-active {
+        font-weight: bold;
+        color: #2B6DFF;
+        background: #EFF4FF;
+    }
+}
+
+.ant-pro-top-nav-header-menu {
+    max-width: calc(100vw - 400px)!important;
+    flex: none!important;
+}

@@ -1,0 +1,23 @@
+module.exports = {
+    // less vars，customize ant design theme
+    'primary-color': '#5B6FFF',
+    '@text-color': '#333',
+    'font-size-base': '12px',
+    // 'border-radius-base': '2px',
+    'layout-header-height': '40px',
+    'layout-header-background': '#252844',
+    'layout-body-background': '#f0f2f9',
+    'menu-item-font-size': '14px',
+    'breadcrumb-font-size': '14px',
+    'table-padding-vertical': '13px',
+    'table-header-bg': '#F6F7FC',
+    'input-addon-bg': 'rgba(239,242,250,0.50)',
+    'input-border-color': '#E7E8EE',
+    'select-border-color': '#E7E8EE',
+    'modal-body-padding': '28px 60px',
+    'btn-padding-base': '0 13px',
+    'table-selected-row-bg': 'rgba(239,242,250,0.60)',
+    'breadcrumb-link-color': '#333333',
+    'breadcrumb-last-item-color': '#999999',
+    'menu-icon-size': '14px',
+}

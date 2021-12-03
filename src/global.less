@@ -1,0 +1,53 @@
+@import '~ant-design-vue/es/style/themes/default.less';
+
+html,
+body,
+#saas-app,
+#root {
+    height: 100%;
+    overflow: hidden;
+}
+
+.colorWeak {
+    filter: invert(80%);
+}
+
+.ant-layout.layout-basic {
+    height: 100vh;
+    min-height: 100vh;
+}
+
+canvas {
+    display: block;
+}
+
+body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+// 内容区域默认高度
+.ant-pro-page-header-wrap-children-content {
+    flex: 1;
+    height: calc(100vh - 89px - 64px - 32px);
+    margin: 16px;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+.ant-page-header-heading-title {
+    font-size: 20px;
+}
+
+@media only screen {
+    html {
+        font-size: (100vw / 19.2) !important;
+    }
+}
+
