@@ -1,5 +1,6 @@
 # vue-main
 
+```vue + antd vue```
 ## Project setup
 ```
 yarn install
